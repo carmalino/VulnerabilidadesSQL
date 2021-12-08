@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VulnerabilidadesSQL.Utilidades", "VulnerabilidadesSQL.Utilidades\VulnerabilidadesSQL.Utilidades.csproj", "{5DC60E48-3156-467D-B290-39C384EB05F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VulnerabilidadesSQL.API", "VulnerabilidadesSQL.API\VulnerabilidadesSQL.API.csproj", "{384766FB-CFE2-4B3C-B5A5-F7F75F33293E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DC60E48-3156-467D-B290-39C384EB05F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DC60E48-3156-467D-B290-39C384EB05F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DC60E48-3156-467D-B290-39C384EB05F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DC60E48-3156-467D-B290-39C384EB05F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{384766FB-CFE2-4B3C-B5A5-F7F75F33293E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{384766FB-CFE2-4B3C-B5A5-F7F75F33293E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{384766FB-CFE2-4B3C-B5A5-F7F75F33293E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{384766FB-CFE2-4B3C-B5A5-F7F75F33293E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B66D2F3D-24CE-4B71-AF24-71E08722B709}
+	EndGlobalSection
+EndGlobal
