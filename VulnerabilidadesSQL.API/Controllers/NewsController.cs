@@ -26,15 +26,24 @@ namespace VulnerabilidadesSQL.API.Controllers
         }
 
         // GET: News/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details([FromQuery] int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
+            //var @new = await _context.Set<New>()
+            //    .FromSqlRaw("select * from News where Id = " + id)
+            //    .FirstOrDefaultAsync();
+
             var @new = await _context.News
                 .FirstOrDefaultAsync(m => m.Id == id);
+
+            //var @new = await _context.Set<New>()
+            //    .FromSqlInterpolated($"select * from News" ).Where(b => b.Id == id)
+            //    .FirstOrDefaultAsync();
+
             if (@new == null)
             {
                 return NotFound();
@@ -86,7 +95,7 @@ namespace VulnerabilidadesSQL.API.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Body,DateTime")] New @new)
+        public async Task<IActionResult> Edit(int id, New @new)
         {
             if (id != @new.Id)
             {

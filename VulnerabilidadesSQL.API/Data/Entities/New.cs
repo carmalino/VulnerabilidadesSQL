@@ -19,6 +19,7 @@ namespace VulnerabilidadesSQL.API.Data.Entities
         [Required(ErrorMessage = "El mensaje es obligatorio")]
         public string Body { get; set; }
 
+        [Display(Name = "Fecha Creación")]
         public DateTime DateTime { get; set; }
     }
 }
